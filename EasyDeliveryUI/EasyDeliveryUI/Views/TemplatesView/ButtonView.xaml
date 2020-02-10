@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Name="this"
+             x:Class="EasyDeliveryUI.Views.TemplatesView.ButtonView"
+             BackgroundColor="white">
+    <ContentView.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Label">
+                <Setter Property="TextColor" Value="LightGray"/>
+                <Setter Property="HorizontalTextAlignment" Value="Center"/>
+                <Setter Property="FontSize" Value="24"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentView.Resources>
+    <ContentView.Content>
+        <Grid BindingContext="{x:Reference this}">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="40"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Image Grid.Row="0"
+                   Grid.Column="0"
+                   Source="{Binding ImageCardButton}"/>
+            <Label Grid.Row="1"
+                   Text="{Binding TitleButton, FallbackValue= 'Title'}"
+                   Grid.Column="0"/>
+            <Label Grid.Row="2"
+                   Text="{Binding SubTitleButton, FallbackValue='SubTitle'}"
+                   Grid.Column="0"
+                   FontSize="18"/>
+        </Grid>
+    </ContentView.Content>
+</ContentView>

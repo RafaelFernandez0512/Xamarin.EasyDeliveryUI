@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="EasyDeliveryUI.Views.PrincipalsPages.SignUpPage" 
+             BackgroundColor="White">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid Padding="10,0,10,0" RowSpacing="0" ColumnSpacing="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="25 "/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="120"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="60"/>
+                    <RowDefinition Height="60"/>
+                    <RowDefinition Height="60"/>
+                    <RowDefinition Height="60"/>
+                    <RowDefinition Height="60"/>
+                    <RowDefinition Height="60"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
+                <Image Grid.ColumnSpan="3"
+                   HorizontalOptions="CenterAndExpand"
+                   Grid.Row="0"
+                   Source="bmcargoImage.jpg"
+                />
+                <Label Grid.Row="1"
+                   Grid.ColumnSpan="3"
+                   HorizontalOptions="Center"
+                   Text="Register"
+                   FontSize="32"/>
+
+                <Entry Grid.Column="0"
+                   Grid.Row="2"
+                   Text="{Binding User.Username}"
+                   Placeholder="Username"/>
+
+                <Entry Grid.Column="1"
+                   Grid.ColumnSpan="2"
+                   Grid.Row="2"
+                   Text="{Binding User.Lastname}"
+                   Placeholder="Lastname"/>
+                <Entry Grid.ColumnSpan="3"
+                   Grid.Row="3"
+                   IsPassword="{Binding IsVisible,FallbackValue= 'True'}"
+                   Text="{Binding User.Password}"
+                   Placeholder="Password"/>
+
+                <ImageButton Grid.Column="2"
+                         Grid.Row="3"
+                         Command="{Binding IsVisibleCommand}"
+                         BackgroundColor="Transparent"
+                         Source="{Binding ImageVisibility }"/>
+
+                <Entry Grid.ColumnSpan="3"
+                   Grid.Row="4"
+                   Text="{Binding Password} "
+                   IsPassword="True"
+                   Placeholder="Repeat Password"/>
+
+                <Entry Grid.ColumnSpan="3"
+                   Grid.Row="5"
+                   Text ="{Binding User.EmailUser}"
+                   Placeholder="Email"
+                   Keyboard="Email"/>
+                <DatePicker Grid.Row="6"
+                        Grid.Column="0"
+                        Date="{Binding User.DateOfBirth}"/>
+                <Entry Grid.Column="1"
+                   Grid.ColumnSpan="2"
+                   Grid.Row="6"
+                   Placeholder="Phone"
+                   Text="{Binding User.PhoneUser}"
+                   Keyboard="Numeric"/>
+                <Entry Grid.ColumnSpan="3"
+                   Grid.Row="7"
+                   Keyboard="Numeric"
+                   Text="{Binding User.Id_Card}"
+                   Placeholder="Id card"/>
+                <Label Text="{Binding Validate}"
+                   Grid.Row="8"
+                   Grid.ColumnSpan="3"
+                   TextColor="DarkRed"
+                   VerticalOptions="StartAndExpand"
+                   HorizontalOptions="StartAndExpand"/>
+                <Label Text="Terms and conditions"
+                   Grid.Row="8"
+                   Grid.ColumnSpan="3"
+                   TextColor="DarkRed"
+                   VerticalOptions="EndAndExpand"
+                   HorizontalOptions="CenterAndExpand"/>
+                <Button  Grid.Row="9"
+                     Grid.ColumnSpan="3"
+                     Text="Create account"
+                     Command="{Binding FinishCommand}"
+                     Style="{StaticResource ButtonLoginPageKey}"/>
+
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

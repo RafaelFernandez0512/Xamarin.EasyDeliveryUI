@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:TemplatedView="clr-namespace:EasyDeliveryUI.Views.TemplatesView"
+             mc:Ignorable="d"
+             x:Class="EasyDeliveryUI.Views.PrincipalsPages.LoginPage"
+             BackgroundColor="White"
+             Title="Login"
+             >
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Sign Up"
+                     Priority="0"
+                     Order="Primary"
+
+                     Command="{Binding SignUpCommand}"/>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid Padding="10,0,35,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="20"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="30"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="180"/>
+                    <RowDefinition Height="60"/>
+                    <RowDefinition Height="60"/>
+                    <RowDefinition Height="60"/>
+                    <RowDefinition Height="60"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="60"/>
+                </Grid.RowDefinitions>
+                <Image Grid.ColumnSpan="5"
+                   Grid.Column="1"
+                   Grid.Row="0"
+                   HorizontalOptions="CenterAndExpand"
+                   Source="bmcargoImage.jpg"
+                />
+                <Label Grid.Row="1"
+                   Grid.ColumnSpan="5"
+                   Grid.Column="1"
+                   Text="Welcome to bm cargo"
+                   HorizontalOptions="CenterAndExpand"
+                   FontSize="20"/>
+                <!-- Username -->
+                <Image Grid.Row="2"
+                       Grid.Column="0"
+                       BackgroundColor="Transparent"
+                       Source="outline_person_black_18dp.png"/>
+                <Entry Text="{Binding Username}"
+                   Placeholder="Username"
+                    Grid.Column="1"
+                   Grid.ColumnSpan="5"
+                   Grid.Row="2"/>
+                <!-- Password -->
+                    <Image Grid.Row="3"
+                       Grid.Column="0"
+                           BackgroundColor="Transparent"
+                       Source="baseline_vpn_key_black_18dp.png"/>
+                <Entry Text="{Binding Password}"
+                   Placeholder="Password"
+                   IsPassword="{Binding IsVisible }"
+                    Grid.Column="1"
+                   Grid.ColumnSpan="5"
+                   Grid.Row="3"/>
+                <ImageButton Grid.Column="5"
+                             Grid.Row="3"
+                             BackgroundColor="Transparent"
+                             Command="{Binding IsVisibleCommand}"
+                             Source="{Binding ImageVisibility}"/>
+                <Button Grid.Column="1"
+                    Grid.ColumnSpan="5"
+                        Grid.Row="4"
+                    Text="Sign Out"
+                    Command="{Binding SignOutCommand}"
+                    Style="{StaticResource ButtonLoginPageKey}"/>
+                <Label  Grid.Row="5"
+                    Grid.ColumnSpan="5"
+                    Text="Forgot password?" 
+                    FontSize="14"
+                    FontAttributes="Italic"
+                    TextColor="DarkBlue"
+                    HorizontalOptions="EndAndExpand"
+                    VerticalOptions="CenterAndExpand"/>
+                <Label  Grid.Row="6"
+                        Grid.Column="1"
+                    Grid.ColumnSpan="5"
+                    Text="Sign with:" 
+                    HorizontalOptions="CenterAndExpand"/>
+                <ImageButton Grid.Column="1"
+                   Grid.Row="7"
+                  Style="{StaticResource ImageButtonLoginPageKey}"
+                   Source="Imagegoogle.png"/>
+
+                <ImageButton Grid.Column="2"
+                         Style="{StaticResource ImageButtonLoginPageKey}"
+                   Grid.Row="7"
+                   Source="ImageInstagram.png"/>
+                <ImageButton Grid.Column="3"
+                         Style="{StaticResource ImageButtonLoginPageKey}"
+                   Grid.Row="7"
+                   Source="ImageTwitter.png"/>
+                <ImageButton Grid.Column="4"
+                         Style="{StaticResource ImageButtonLoginPageKey}"
+                   Grid.Row="7"
+                   Source="GitHubMark.png"/>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

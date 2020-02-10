@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Name="this"
+             x:Class="EasyDeliveryUI.Views.TemplatesView.CardView">
+    <ContentView.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Label">
+                <Setter Property="TextColor" Value="Black"/>
+                <Setter Property="HorizontalTextAlignment" Value="Center"/>
+                <Setter Property="FontSize" Value="28"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+            </Style>
+            <Style TargetType="Button">
+                <Setter Property="CornerRadius" Value="50"/>
+                <Setter Property="FontSize" Value="24"/>
+                <Setter Property="BackgroundColor" Value="DodgerBlue"/>
+                <Setter Property="TextColor" Value="White"/>
+            </Style>
+
+        </ResourceDictionary>
+    </ContentView.Resources>
+    <ContentView.Content>
+        <Frame CornerRadius="50"
+               BindingContext="{x:Reference this}"
+               BackgroundColor="White">
+            <Grid  >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="8*"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="2.5*"/>
+                    <RowDefinition Height="80"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="8*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Image
+                   Grid.ColumnSpan="3"
+                   Source="{Binding ImageCard}"/>
+                <Label Grid.Row="1"
+                       x:Name="LabelTitle"
+                   Text="{Binding TitleCard, FallbackValue= 'Title'}"
+                    Grid.ColumnSpan="3"/>
+                <Label Grid.Row="2"
+                   Text="{Binding Description, FallbackValue='Description'}"
+                   Grid.ColumnSpan="3"
+                   FontSize="20"
+                   HorizontalTextAlignment="Start"
+                   LineBreakMode="WordWrap"
+                    />
+
+                <Button Grid.Column="1"
+                    Grid.Row="3"
+                    ImageSource="baseline_arrow_forward_ios_white_18dp.png"
+                    Text="Continue"
+                    ContentLayout="Right,-60"/>
+
+            </Grid>
+        </Frame>
+    </ContentView.Content>
+</ContentView>

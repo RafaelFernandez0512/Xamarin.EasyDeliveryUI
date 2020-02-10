@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:TemplatesView="clr-namespace:EasyDeliveryUI.Views.TemplatesView"
+             mc:Ignorable="d"
+             x:Class="EasyDeliveryUI.Views.TemplatesView.MenuCarouselView">
+  <ContentView.Content>
+        <CarouselView ItemsSource="{Binding ItemMenus}">
+            <CarouselView.ItemTemplate>
+                <DataTemplate>
+                    <TemplatesView:CardView TitleCard ="{Binding TitleCard}"
+                                            Description="{Binding Description}"
+                                            ImageCard="{Binding ImageCard}"/>
+                </DataTemplate>
+            </CarouselView.ItemTemplate>
+        </CarouselView>
+    </ContentView.Content>
+</ContentView>

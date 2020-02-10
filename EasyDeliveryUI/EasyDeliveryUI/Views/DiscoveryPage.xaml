@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:TemplatedView="clr-namespace:EasyDeliveryUI.Views.TemplatesView"
+             mc:Ignorable="d"
+             x:Class="EasyDeliveryUI.Views.DiscoveryPage"
+             BackgroundColor="LightGray"
+             Title="Discovery">
+    <ContentPage.Content>
+        <Grid Padding="20" ColumnSpacing="15">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <TemplatedView:ButtonView Grid.Row="0"
+                                      Grid.Column="0"
+                                      x:Name="PoundsTap"
+                                      TitleButton="Pounds"
+                                      ImageCardButton="equilibrar.png"
+                                      SubTitleButton="Pounds calculate ">
+                <TemplatedView:ButtonView.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="ChangeColorSelect_Tapped"
+                                          NumberOfTapsRequired="1"/>
+                </TemplatedView:ButtonView.GestureRecognizers>
+            </TemplatedView:ButtonView>
+            <TemplatedView:ButtonView Grid.Row="0"
+                                      Grid.Column="1"
+                                       x:Name="CapitalTap"
+                                      ImageCardButton="Icon_capital.png"
+                                      TitleButton="Warehouse"
+                                      SubTitleButton="Capacity 120">
+                <TemplatedView:ButtonView.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="ChangeColorSelect_Tapped"
+                                          NumberOfTapsRequired="1"/>
+                </TemplatedView:ButtonView.GestureRecognizers>
+            </TemplatedView:ButtonView>
+            <TemplatedView:ButtonView Grid.Row="1"
+                                      Grid.Column="0"
+                                       x:Name="DeliveryTap"
+                                      ImageCardButton="Icon_DeliveryHome.png"
+                                      TitleButton="Delivery"
+                                      SubTitleButton="Don't get out of bed">
+                <TemplatedView:ButtonView.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="ChangeColorSelect_Tapped"
+                                          NumberOfTapsRequired="1"/>
+                </TemplatedView:ButtonView.GestureRecognizers>
+            </TemplatedView:ButtonView>
+            <TemplatedView:ButtonView Grid.Row="1"
+                                      Grid.Column="1"
+                                       x:Name="TrackTap"
+                                      ImageCardButton="Icon_caja.png"
+                                      TitleButton="Track package"
+                                      SubTitleButton="Number Tracking">
+                <TemplatedView:ButtonView.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="ChangeColorSelect_Tapped"
+                                          NumberOfTapsRequired="1"/>
+                </TemplatedView:ButtonView.GestureRecognizers>
+            </TemplatedView:ButtonView>
+            <TemplatedView:ButtonView Grid.Row="2"
+                                      Grid.Column="0"
+                                       x:Name="CarPackageTap"
+                                       ImageCardButton="Icon_CarPackage.png"
+                                      TitleButton="Car package"
+                                      SubTitleButton="Especif pacakage">
+                <TemplatedView:ButtonView.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="ChangeColorSelect_Tapped"
+                                          NumberOfTapsRequired="1"/>
+                </TemplatedView:ButtonView.GestureRecognizers>
+            </TemplatedView:ButtonView>
+            <TemplatedView:ButtonView Grid.Row="2"
+                                      Grid.Column="1"
+                                       x:Name="DeliveryStateTap"
+                                      ImageCardButton="orden"
+                                      TitleButton="Delivery state"
+                                      SubTitleButton="On the way">
+                <TemplatedView:ButtonView.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="ChangeColorSelect_Tapped"
+                                          NumberOfTapsRequired="1"/>
+                </TemplatedView:ButtonView.GestureRecognizers>
+            </TemplatedView:ButtonView>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

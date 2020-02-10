@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:TemplatesView="clr-namespace:EasyDeliveryUI.Views.TemplatesView"
+
+             mc:Ignorable="d"
+             x:Class="EasyDeliveryUI.Views.HomePage"
+             BackgroundImageSource="MapImage.png"
+             Title="Home">
+    <ContentPage.Content>
+        <Grid Padding="20">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="20*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <TemplatesView:MenuCarouselView
+                Grid.Column="0"
+                Grid.Row="1"/>
+            </Grid>
+    </ContentPage.Content>
+</ContentPage>
