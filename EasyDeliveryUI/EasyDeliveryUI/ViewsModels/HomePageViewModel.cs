@@ -12,19 +12,19 @@ namespace EasyDeliveryUI.ViewsModels
         {
             TitleCard = "Delivery",
             Description = "Managed the delivery of the stuff you can't fit into your car.",
-            ImageCard = "EmpacadorImage.jpg"
+            ImageCard = "transporteaereo"
             },
         new HomeMenu()
         {
             TitleCard = "Tracking package",
             Description = "We can track your package with the number of traking",
-            ImageCard = "PaquetesImage.jpg"
+            ImageCard = "paquetesImage"
             },
         new HomeMenu()
             {
-            TitleCard = "Package",
+            TitleCard = "Package pounts",
             Description = "For packages from 0 to 70 pounds, this service arrives within 24 to 48 hours from the USA.",
-            ImageCard = "PaquetesImage.jpg"
+            ImageCard = "CarImage.png"
             }
         };
     };

@@ -1,4 +1,6 @@
-﻿using EasyDeliveryUI.Views.TemplatesView;
+﻿using EasyDeliveryUI.Models;
+using EasyDeliveryUI.Views.TemplatesView;
+using EasyDeliveryUI.ViewsModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,18 +18,23 @@ namespace EasyDeliveryUI.Views
         public DiscoveryPage()
         {
             InitializeComponent();
+            BindingContext = new DiscoveryPageViewModel();
         }
 
-        private void ChangeColorSelect_Tapped(object sender, EventArgs e)
+
+        private void CollectionView_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            PoundsTap.BackgroundColor = Color.White;
-            CapitalTap.BackgroundColor = Color.White;
-            DeliveryTap.BackgroundColor = Color.White;
-            TrackTap.BackgroundColor = Color.White;
-            CarPackageTap.BackgroundColor = Color.White;
-            DeliveryStateTap.BackgroundColor = Color.White;
-            var select = (ButtonView)sender;
-            select.BackgroundColor = Color.Goldenrod;
+            var product = e.CurrentSelection;
+            if (product != null)
+            {
+                var select = product.FirstOrDefault() as DiscoveryMenu;
+                if (select.Type_Target !=null)
+                {
+                    var page = (Page)Activator.CreateInstance(select.Type_Target);
+                    Navigation.PushAsync(page);
+                }
+
+            }
         }
     }
 }

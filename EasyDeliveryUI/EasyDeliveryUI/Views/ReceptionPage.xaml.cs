@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace EasyDeliveryUI.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class PackagePage : ContentPage
+    public partial class ReceptionPage : ContentPage
     {
-        public PackagePage()
+        public ReceptionPage()
         {
             InitializeComponent();
         }

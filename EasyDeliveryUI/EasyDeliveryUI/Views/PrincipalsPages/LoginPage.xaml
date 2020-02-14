@@ -6,7 +6,8 @@
              xmlns:TemplatedView="clr-namespace:EasyDeliveryUI.Views.TemplatesView"
              mc:Ignorable="d"
              x:Class="EasyDeliveryUI.Views.PrincipalsPages.LoginPage"
-             BackgroundColor="White"
+             BackgroundImageSource="MapImage.png"
+             Opacity="20"
              Title="Login"
              >
     <ContentPage.ToolbarItems>
@@ -41,22 +42,23 @@
                    Grid.Column="1"
                    Grid.Row="0"
                    HorizontalOptions="CenterAndExpand"
-                   Source="bmcargoImage.jpg"
+                   Source="aviondepapel.png"
                 />
                 <Label Grid.Row="1"
                    Grid.ColumnSpan="5"
                    Grid.Column="1"
-                   Text="Welcome to bm cargo"
+                   Text="Welcome"
                    HorizontalOptions="CenterAndExpand"
                    FontSize="20"/>
                 <!-- Username -->
                 <Image Grid.Row="2"
                        Grid.Column="0"
                        BackgroundColor="Transparent"
-                       Source="outline_person_black_18dp.png"/>
+                       Source="ImageUsers.png"/>
                 <Entry Text="{Binding Username}"
                    Placeholder="Username"
                     Grid.Column="1"
+                       PlaceholderColor="Black"
                    Grid.ColumnSpan="5"
                    Grid.Row="2"/>
                 <!-- Password -->
@@ -68,6 +70,7 @@
                    Placeholder="Password"
                    IsPassword="{Binding IsVisible }"
                     Grid.Column="1"
+                       PlaceholderColor="Black"
                    Grid.ColumnSpan="5"
                    Grid.Row="3"/>
                 <ImageButton Grid.Column="5"

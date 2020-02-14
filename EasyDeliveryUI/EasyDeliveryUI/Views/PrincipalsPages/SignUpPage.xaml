@@ -5,7 +5,8 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="EasyDeliveryUI.Views.PrincipalsPages.SignUpPage" 
-             BackgroundColor="White">
+            BackgroundImageSource="MapImage.png"
+             Opacity="20">
     <ContentPage.Content>
         <ScrollView>
             <Grid Padding="10,0,10,0" RowSpacing="0" ColumnSpacing="0">
@@ -29,7 +30,7 @@
                 <Image Grid.ColumnSpan="3"
                    HorizontalOptions="CenterAndExpand"
                    Grid.Row="0"
-                   Source="bmcargoImage.jpg"
+                   Source="Imageusuario.png"
                 />
                 <Label Grid.Row="1"
                    Grid.ColumnSpan="3"

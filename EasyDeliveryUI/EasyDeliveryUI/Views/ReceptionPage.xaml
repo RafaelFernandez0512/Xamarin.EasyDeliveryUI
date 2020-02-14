@@ -4,14 +4,12 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="EasyDeliveryUI.Views.PackagePage"
-             Title="Package">
+             x:Class="EasyDeliveryUI.Views.ReceptionPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Tracking package" 
-                   FontSize="24"
-                   HorizontalOptions="CenterAndExpand"/>
-            <SearchBar Placeholder="Number Tracking" />
+            <Label Text="Welcome to Xamarin.Forms!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

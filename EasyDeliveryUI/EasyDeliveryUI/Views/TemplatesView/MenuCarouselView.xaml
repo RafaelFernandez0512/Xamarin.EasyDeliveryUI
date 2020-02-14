@@ -6,13 +6,14 @@
              xmlns:TemplatesView="clr-namespace:EasyDeliveryUI.Views.TemplatesView"
              mc:Ignorable="d"
              x:Class="EasyDeliveryUI.Views.TemplatesView.MenuCarouselView">
-  <ContentView.Content>
+    <ContentView.Content>
         <CarouselView ItemsSource="{Binding ItemMenus}">
             <CarouselView.ItemTemplate>
                 <DataTemplate>
                     <TemplatesView:CardView TitleCard ="{Binding TitleCard}"
                                             Description="{Binding Description}"
-                                            ImageCard="{Binding ImageCard}"/>
+                                            ImageCard="{Binding ImageCard}"
+                                            Padding="10"/>
                 </DataTemplate>
             </CarouselView.ItemTemplate>
         </CarouselView>

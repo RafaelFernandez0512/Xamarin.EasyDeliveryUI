@@ -12,31 +12,26 @@
             <Style TargetType="Label">
                 <Setter Property="TextColor" Value="LightGray"/>
                 <Setter Property="HorizontalTextAlignment" Value="Center"/>
-                <Setter Property="FontSize" Value="24"/>
+                <Setter Property="FontSize" Value="20"/>
                 <Setter Property="FontAttributes" Value="Bold"/>
             </Style>
         </ResourceDictionary>
     </ContentView.Resources>
     <ContentView.Content>
-        <Grid BindingContext="{x:Reference this}">
+        <Grid BindingContext="{x:Reference this}" Padding="30" >
             <Grid.RowDefinitions>
-                <RowDefinition Height="5*"/>
-                <RowDefinition Height="30"/>
-                <RowDefinition Height="40"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="50"/>
             </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
             <Image Grid.Row="0"
                    Grid.Column="0"
                    Source="{Binding ImageCardButton}"/>
             <Label Grid.Row="1"
-                   Text="{Binding TitleButton, FallbackValue= 'Title'}"
-                   Grid.Column="0"/>
-            <Label Grid.Row="2"
+                   Text="{Binding TitleButton, FallbackValue= 'Title'}"/>
+            <Label Grid.Row="1"
+                   VerticalOptions="EndAndExpand"
                    Text="{Binding SubTitleButton, FallbackValue='SubTitle'}"
-                   Grid.Column="0"
-                   FontSize="18"/>
+                   FontSize="16"/>
         </Grid>
     </ContentView.Content>
 </ContentView>

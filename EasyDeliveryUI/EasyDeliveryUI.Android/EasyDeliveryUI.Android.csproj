@@ -92,88 +92,115 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\baseline_arrow_forward_ios_white_18dp.png" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\EasyDeliveryUI\EasyDeliveryUI.csproj">
       <Project>{9F360D7C-7A5B-47EE-BEAF-A1CBA58021C3}</Project>
       <Name>EasyDeliveryUI</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\PaquetesImage.jpg" />
+    <AndroidResource Include="Resources\drawable\FreeShippingImage.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\EmpacadorImage.jpg" />
+    <AndroidResource Include="Resources\drawable\ImageLocation.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\equilibrar.png" />
+    <AndroidResource Include="Resources\drawable\ImageUsers.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Icon_caja.png" />
+    <AndroidResource Include="Resources\drawable\inProcessImage.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Icon_capital.png" />
+    <AndroidResource Include="Resources\drawable\locationImage.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Icon_CarPackage.png" />
+    <AndroidResource Include="Resources\drawable\PountsImage.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Icon_DeliveryHome.png" />
+    <AndroidResource Include="Resources\drawable\reloj.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\icon_email.png" />
+    <AndroidResource Include="Resources\drawable\SendImage.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Icon_truck.png" />
+    <AndroidResource Include="Resources\drawable\TruckImage.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\MapImage.png" />
+    <AndroidResource Include="Resources\drawable\UpdateImage.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\orden.png" />
+    <AndroidResource Include="Resources\drawable\StoreBag.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\outline_home_black_18dp.png" />
+    <AndroidResource Include="Resources\drawable\casaImage.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\outline_person_black_18dp.png" />
+    <AndroidResource Include="Resources\drawable\aviondepapel.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\outline_search_black_18dp.png" />
+    <AndroidResource Include="Resources\drawable\BoatImage.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\bmcargoImage.jpg" />
+    <AndroidResource Include="Resources\drawable\CarImage.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\baseline_verified_user_black_18dp.png" />
+    <AndroidResource Include="Resources\drawable\baseline_visibility_black_18dp.png">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\baseline_vpn_key_black_18dp.png" />
+    <AndroidResource Include="Resources\drawable\baseline_visibility_off_black_18dp.png">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Imagegoogle.png" />
+    <AndroidResource Include="Resources\drawable\baseline_vpn_key_black_18dp.png">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\ImageInstagram.png" />
+    <AndroidResource Include="Resources\drawable\GitHubMark.png">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\ImageTwitter.png" />
+    <AndroidResource Include="Resources\drawable\Imagegoogle.png">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\GitHubMark.png" />
+    <AndroidResource Include="Resources\drawable\ImageInstagram.png">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\baseline_visibility_black_18dp.png" />
+    <AndroidResource Include="Resources\drawable\ImageTwitter.png">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\baseline_visibility_off_black_18dp.png" />
+    <AndroidResource Include="Resources\drawable\outline_search_black_18dp.png">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\ImageProfile.jpg" />
+    <AndroidResource Include="Resources\drawable\transporteaereo.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Imageusuario.png" />
+    <AndroidResource Include="Resources\drawable\paquetesImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\MapImage.png">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

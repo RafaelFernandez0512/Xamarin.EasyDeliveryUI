@@ -16,11 +16,12 @@
                 <Setter Property="BackgroundColor" Value="Transparent"/>
             </Style>
             <Style TargetType="Button" x:Key="ButtonLoginPageKey">
-                <Setter Property="BackgroundColor" Value="DarkGreen"/>
+                <Setter Property="BackgroundColor" Value="CadetBlue"/>
+                <Setter Property="TextColor" Value="White"/>
             </Style>
             <Style TargetType="NavigationPage" >
-                <Setter Property="BarBackgroundColor" Value="CornflowerBlue"/>
-                <Setter Property="BarTextColor" Value="LightGray"/>
+                <Setter Property="BarBackgroundColor" Value="CadetBlue"/>
+                <Setter Property="BarTextColor" Value="White"/>
             </Style>
         </ResourceDictionary>
     </Application.Resources>

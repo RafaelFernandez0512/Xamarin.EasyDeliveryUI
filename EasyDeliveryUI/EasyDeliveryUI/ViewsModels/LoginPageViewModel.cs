@@ -33,7 +33,7 @@ namespace EasyDeliveryUI.ViewsModels
                 IsVisible = !IsVisible;
                 ImageVisibility = IsVisible ? "baseline_visibility_black_18dp.png" : "baseline_visibility_off_black_18dp.png";
             });
-            SignOutCommand = new Command(async () =>
+            SignOutCommand = new Command(() =>
             {
                 MessagingCenter.Subscribe<SignUpPageViewModel, List<Account>>(this, "List", (sender, param) => {
                     Accounts = param;

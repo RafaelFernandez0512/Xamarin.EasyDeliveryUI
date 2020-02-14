@@ -11,25 +11,25 @@
              NavigationPage.HasNavigationBar="False">
   <!--Pages can be added as references or inline-->
 
-    <NavigationPage Title="Home" IconImageSource="outline_home_black_18dp.png" BarBackgroundColor="White">
+    <NavigationPage Title="Home" IconImageSource="casaImage.png" BarBackgroundColor="White" BarTextColor="LightGray">
         <x:Arguments>
             <local:HomePage />
         </x:Arguments>
     </NavigationPage>
 
-    <NavigationPage Title="Discovery" IconImageSource="outline_search_black_18dp.png" BarBackgroundColor="White">
+    <NavigationPage Title="Discovery" IconImageSource="outline_search_black_18dp.png" BarBackgroundColor="White" BarTextColor="LightGray">
         <x:Arguments>
             <local:DiscoveryPage Title="Discovery"/>
         </x:Arguments>
     </NavigationPage>
 
-    <NavigationPage Title="Package" IconImageSource="Icon_caja.png" BarBackgroundColor="White">
+    <NavigationPage Title="Package" IconImageSource="reloj.png" BarBackgroundColor="White" BarTextColor="LightGray" >
         <x:Arguments>
-            <local:PackagePage Title="Package" />
+            <local:ReceptionPage Title="Recepion" />
         </x:Arguments>
     </NavigationPage>
 
-    <NavigationPage Title="Profile" IconImageSource="outline_person_black_18dp.png" BarBackgroundColor="White">
+    <NavigationPage Title="Profile" IconImageSource="ImageUsers.png" BarBackgroundColor="White" BarTextColor="LightGray">
         <x:Arguments>
             <local:ProfilePage Title="Profile"  />
         </x:Arguments>
