@@ -69,7 +69,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
@@ -136,123 +135,81 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\baseline_arrow_forward_ios_white_18dp.png">
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-      <SubType>Designer</SubType>
-    </AndroidResource>
+    <BundleResource Include="Resources\aviondepapel.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\baseline_verified_user_black_18dp.png">
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-      <SubType>Designer</SubType>
-    </AndroidResource>
+    <BundleResource Include="Resources\baseline_visibility_black_18dp.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\baseline_visibility_black_18dp.png">
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-      <SubType>Designer</SubType>
-    </AndroidResource>
+    <BundleResource Include="Resources\baseline_visibility_off_black_18dp.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\baseline_visibility_off_black_18dp.png">
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-      <SubType>Designer</SubType>
-    </AndroidResource>
+    <BundleResource Include="Resources\baseline_vpn_key_black_18dp.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\baseline_vpn_key_black_18dp.png">
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-      <SubType>Designer</SubType>
-    </AndroidResource>
+    <BundleResource Include="Resources\BoatImage.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\bmcargoImage.jpg">
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-      <SubType>Designer</SubType>
-    </AndroidResource>
+    <BundleResource Include="Resources\CarImage.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\EmpacadorImage.jpg">
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-      <SubType>Designer</SubType>
-    </AndroidResource>
+    <BundleResource Include="Resources\casaImage.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\equilibrar.png">
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-      <SubType>Designer</SubType>
-    </AndroidResource>
+    <BundleResource Include="Resources\FreeShippingImage.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\GitHubMark.png">
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-      <SubType>Designer</SubType>
-    </AndroidResource>
+    <BundleResource Include="Resources\GitHubMark.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\Imagegoogle.png">
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-      <SubType>Designer</SubType>
-    </AndroidResource>
+    <BundleResource Include="Resources\Imagegoogle.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\ImageInstagram.png">
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-      <SubType>Designer</SubType>
-    </AndroidResource>
+    <BundleResource Include="Resources\ImageInstagram.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\ImageProfile.jpg">
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-      <SubType>Designer</SubType>
-    </AndroidResource>
+    <BundleResource Include="Resources\ImageLocation.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\ImageTwitter.png">
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-      <SubType>Designer</SubType>
-    </AndroidResource>
+    <BundleResource Include="Resources\ImageTwitter.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\Imageusuario.png">
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-      <SubType>Designer</SubType>
-    </AndroidResource>
+    <BundleResource Include="Resources\ImageUsers.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\MapImage.png">
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-      <SubType>Designer</SubType>
-    </AndroidResource>
+    <BundleResource Include="Resources\inProcessImage.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\orden.png">
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-      <SubType>Designer</SubType>
-    </AndroidResource>
+    <BundleResource Include="Resources\locationImage.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\outline_home_black_18dp.png">
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-      <SubType>Designer</SubType>
-    </AndroidResource>
+    <BundleResource Include="Resources\MapImage.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\outline_person_black_18dp.png">
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-      <SubType>Designer</SubType>
-    </AndroidResource>
+    <BundleResource Include="Resources\outline_search_black_18dp.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\outline_search_black_18dp.png">
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-      <SubType>Designer</SubType>
-    </AndroidResource>
+    <BundleResource Include="Resources\paquetesImage.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\PaquetesImage.jpg">
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-      <SubType>Designer</SubType>
-    </AndroidResource>
+    <BundleResource Include="Resources\PountsImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\reloj.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\SendImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\StoreBag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\transporteaereo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TruckImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\UpdateImage.png" />
   </ItemGroup>
 </Project>
