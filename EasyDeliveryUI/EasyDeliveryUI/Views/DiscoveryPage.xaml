@@ -7,6 +7,7 @@
              mc:Ignorable="d"
              x:Class="EasyDeliveryUI.Views.DiscoveryPage"
              BackgroundColor="LightGray"
+             BackgroundImageSource="MapImage"
              Title="Discovery">
 
     <StackLayout Margin="20,10,10,10">
@@ -25,7 +26,8 @@
                     <TemplatedView:ButtonView 
                                       TitleButton="{Binding TitleDiscovery}"
                                       ImageCardButton="{Binding ImageDiscovery}"
-                                      SubTitleButton="{Binding SubTitleDiscovery}"/>
+                                      SubTitleButton="{Binding SubTitleDiscovery}"
+                        Opacity="0.9"/>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
 

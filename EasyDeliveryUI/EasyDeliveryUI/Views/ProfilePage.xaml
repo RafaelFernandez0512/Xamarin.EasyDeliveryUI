@@ -6,72 +6,89 @@
              mc:Ignorable="d"
              x:Class="EasyDeliveryUI.Views.ProfilePage"
              Title="Profile"
-             BackgroundColor="White">
-    <ContentPage.ToolbarItems>
-        <ToolbarItem IconImageSource="icon_email.png"
-                     Priority="0"
-                     Order="Primary"/>
-        <ToolbarItem Text="Log out"
-                     Priority="0"
-                     Command="{Binding LogOutCommand}"
-                     Order="Secondary"/>
-    </ContentPage.ToolbarItems>
+             BackgroundImageSource="MapImage">
     <ContentPage.Content>
         <ScrollView>
             <Grid ColumnSpacing="0"
-              RowSpacing="0">
+              RowSpacing="0"
+                  Padding="10">
                 <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="90"/>
+                    <RowDefinition Height="70"/>
                     <RowDefinition Height="40"/>
-                    <RowDefinition Height="120"/>
-                    <RowDefinition Height="40"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="70"/>
+                    <RowDefinition Height="1"/>
+                    <RowDefinition Height="60"/>
+                    <RowDefinition Height="60"/>
+                    <RowDefinition Height="60"/>
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <Image Grid.RowSpan="3"
-                   Grid.ColumnSpan="3"
-                       Aspect="AspectFill"
-                       BackgroundColor="IndianRed"/>
-                <ImageButton Grid.Row="1"
-                   Grid.Column="0"
-                   BackgroundColor="Transparent"
-                   Source="Imageusuario.png"
-                   CornerRadius="60"/>
-                <Label Grid.Row="1"
-                       Grid.Column="1"
-                   Text="{Binding FullName}"
-                   HorizontalOptions="CenterAndExpand"
-                   VerticalOptions="CenterAndExpand"
-                   FontSize="24"
-                   TextColor="White"/>
+                <Frame Grid.RowSpan="7" 
+                       Grid.Row="2"
+                       BackgroundColor="WhiteSmoke"
+                       Opacity="0.9"
+                       CornerRadius="40"
+                       Grid.ColumnSpan="7"
+                       Padding="20"/>
 
-                <Label Text="{Binding User.Username, StringFormat='User Name: {0}'}"
-                   Grid.ColumnSpan="3"
-                   Grid.Row="3"
-                   Style="{StaticResource LabelProfilePageKey}"/>
-                <Label Text="{Binding User.Lastname,StringFormat= 'Lastname: {0}'}"
-                   Grid.ColumnSpan="3"
-                   Grid.Row="4"
-                   Style="{StaticResource LabelProfilePageKey}"/>
-                <Label Text="{Binding User.EmailUser,StringFormat='Email: {0}'}"
-                   Grid.ColumnSpan="3"
-                   Grid.Row="5"
-                   Style="{StaticResource LabelProfilePageKey}"/>
-                <Label Text="{Binding User.PhoneUser,StringFormat='Phone: {0}'}"
-                   Grid.ColumnSpan="3"
-                   Grid.Row="6"
-                   Style="{StaticResource LabelProfilePageKey}"/>
-                <Label Text="{Binding User.Id_Card, StringFormat='ID Card: {0}'}"
-                   Grid.ColumnSpan="3"
-                   Grid.Row="7"
-                   Style="{StaticResource LabelProfilePageKey}"/>
+                <ImageButton Grid.Row="1"
+                             CornerRadius="80"
+                             Grid.Column="2"
+                             Grid.ColumnSpan="3"
+                             Source="ImageProfile"
+                             Aspect="AspectFill"
+                             BackgroundColor="Transparent"
+                             Grid.RowSpan="2"/>
+                
+                <Label Text="{Binding FullName,FallbackValue='Full name'}"
+                          HorizontalOptions="CenterAndExpand"
+                            FontSize="24"
+                            Grid.Row="3"
+                           Grid.ColumnSpan="7"/>
+
+                <Image Source="llamadaImage"
+                               Grid.Row="4"
+                               Grid.Column="1"
+                               />
+
+                <Image  Grid.Row="4"
+                                Source="MoneyImage.png"
+                                Grid.Column="3"/>
+
+
+                <Image Grid.Row="4"
+                                Grid.Column="5"
+                               Source="apoyo_tecnicoImage.png"/>
+                <Label BackgroundColor="Black"
+                               Grid.Row="5"
+                               Grid.ColumnSpan="7"/>
+
+                <Label Text="{Binding User.EmailUser,StringFormat='Email: {0}',FallbackValue='Label'}"
+                            Style="{StaticResource LabelProfilePageKey}"
+                               Grid.Row="6"
+                               Grid.ColumnSpan="7"
+                               HorizontalOptions="StartAndExpand"/>
+
+                <Label Text="{Binding User.PhoneUser,StringFormat='Phone: {0}',FallbackValue='Label'}"
+                            Style="{StaticResource LabelProfilePageKey}"
+                               Grid.Row="7"
+                               Grid.ColumnSpan="7"
+                               HorizontalOptions="StartAndExpand"/>
+
+                <Label Text="{Binding User.Id_Card, StringFormat='ID Card: {0}',FallbackValue='Label'}"
+                            Style="{StaticResource LabelProfilePageKey}"
+                               Grid.Row="8"
+                               Grid.ColumnSpan="7"
+                               HorizontalOptions="StartAndExpand"/>
+
             </Grid>
         </ScrollView>
     </ContentPage.Content>

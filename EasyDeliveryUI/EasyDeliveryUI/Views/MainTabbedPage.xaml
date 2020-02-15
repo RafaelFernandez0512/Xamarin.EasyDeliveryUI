@@ -29,9 +29,5 @@
         </x:Arguments>
     </NavigationPage>
 
-    <NavigationPage Title="Profile" IconImageSource="ImageUsers.png" BarBackgroundColor="White" BarTextColor="LightGray">
-        <x:Arguments>
-            <local:ProfilePage Title="Profile"  />
-        </x:Arguments>
-    </NavigationPage>
+           <local:ProfilePage Title="Profile" IconImageSource="ImageUsers.png" />
 </TabbedPage>

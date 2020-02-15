@@ -10,7 +10,7 @@
             <Style TargetType="Label" x:Key="LabelProfilePageKey">
                 <Setter Property="TextColor" Value="LightSlateGray"/>
                 <Setter Property="FontAttributes" Value="Bold"/>
-                <Setter Property="FontSize" Value="24"/>
+                <Setter Property="FontSize" Value="20"/>
             </Style>
             <Style TargetType="ImageButton" x:Key="ImageButtonLoginPageKey">
                 <Setter Property="BackgroundColor" Value="Transparent"/>

@@ -24,8 +24,37 @@ namespace EasyDeliveryUI.ViewsModels
         public LoginPageViewModel()
         {
             Accounts = new List<Account>() {
-                new Account { Username = "Rafael",Lastname = "Fernandez",EmailUser = "Rafael@gmail.com",Id_Card =48563214,Password = "123", PhoneUser = 809340201} 
+                new Account { Username = "Rafael",Lastname = "Fernandez",EmailUser = "Rafael@gmail.com",Id_Card =48563214,Password = "123", PhoneUser = 809340201,
+                    MyPackages = new List<Package>(){
+                    new Package() {
+                        NamePackage = "Laptop Dell inspiron",
+                        Description = "Laptop dell inspiron 15",
+                         LocationPackage = "Miami Delivery",
+                         NumberTranking = 1321534873,
+                         StatePackage = "transit",
+                        PountsPackage = 20
+                     },
+                    new Package() {
+                        NamePackage = "Playstation",
+                        Description = "Sony Psp 4 usable 500gb ",
+                        LocationPackage = "Santo Doming",
+                        NumberTranking = 567453483,
+                        StatePackage = "embarked",
+                         PountsPackage = 30
+            },
+                    new Package() {
+                         NamePackage = "Mouse gamer",
+                        Description = "Mouser gamer Logitech",
+                        LocationPackage = "Santo Domingo",
+                         NumberTranking = 976534103,
+                        StatePackage = "available",
+                        PountsPackage = 5
+            },
+                    
+                    } 
+                } 
             };
+
             IsVisible = true;
             ImageVisibility = "baseline_visibility_black_18dp.png";
             IsVisibleCommand = new Command(() =>

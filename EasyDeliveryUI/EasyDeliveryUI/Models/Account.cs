@@ -13,6 +13,8 @@ namespace EasyDeliveryUI.Models
         public DateTime DateOfBirth { get; set; }
         public int PhoneUser { get; set; }
         public string EmailUser { get; set; }
+
+        public List<Package> MyPackages { get; set; }
         public Account()
         {
             DateOfBirth = DateTime.UtcNow;
