@@ -1,26 +1,20 @@
 # Xamarin.EasyDeliveryUI
 Xamarin.EasyDeliveryUI
 
-![GitHub Logo](/Screenshot/LoginImage.jpeg)
+![GitHub Logo](/Screenshot/GitDiscoveryMenu.gif)
 Format: ![Alt Text](url)
 
-![GitHub Logo](/Screenshot/MenuTapimage.jpeg)
+![GitHub Logo](/Screenshot/HomeImage3) 
 Format: ![Alt Text](url)
-
+![GitHub Logo](/Screenshot/Home) 
+Format: ![Alt Text](url)
 ![GitHub Logo](/Screenshot/SignUpImage.jpeg)
 Format: ![Alt Text](url)
-
-![GitHub Logo](/Screenshot/Homeimage1.jpeg)
+![GitHub Logo](/Screenshot/MenuTapimage.jpeg)
 Format: ![Alt Text](url)
-
-![GitHub Logo](/Screenshot/HomeImage2.jpeg)
+![GitHub Logo](/Screenshot/DiscoveryImage.jpeg)
 Format: ![Alt Text](url)
-
-![GitHub Logo](/Screenshot/HomeImage.jpeg)
-Format: ![Alt Text](url)
-
-
-![GitHub Logo](/Screenshot/ImageMenu.jpegg)
+![GitHub Logo](/Screenshot/ListImage.jpeg)
 Format: ![Alt Text](url)
 
 
