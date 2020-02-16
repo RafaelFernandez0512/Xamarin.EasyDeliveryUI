@@ -13,15 +13,23 @@
                 <Setter Property="FontSize" Value="20"/>
             </Style>
             <Style TargetType="ImageButton" x:Key="ImageButtonLoginPageKey">
-                <Setter Property="BackgroundColor" Value="Transparent"/>
+                <Setter Property="BackgroundColor" Value="#DB4437"/>
+                <Setter Property="CornerRadius" Value="50"/>
+                <Setter Property="Opacity" Value="0.85"/>
             </Style>
             <Style TargetType="Button" x:Key="ButtonLoginPageKey">
-                <Setter Property="BackgroundColor" Value="CadetBlue"/>
-                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="BackgroundColor" Value="White"/>
+                <Setter Property="TextColor" Value="Black"/>
+                <Setter Property="CornerRadius" Value="50"/>
+                <Setter Property="Opacity" Value="0.5"/>
             </Style>
-            <Style TargetType="NavigationPage" >
-                <Setter Property="BarBackgroundColor" Value="CadetBlue"/>
+            <Style TargetType="NavigationPage">
+                <Setter Property="BarBackgroundColor" Value="IndianRed"/>
                 <Setter Property="BarTextColor" Value="White"/>
+            </Style>
+            <Style TargetType="NavigationPage" x:Key="NavegationKeyTapped">
+                <Setter Property="BarBackgroundColor" Value="Beige"/>
+                <Setter Property="BarTextColor" Value="black"/>
             </Style>
         </ResourceDictionary>
     </Application.Resources>

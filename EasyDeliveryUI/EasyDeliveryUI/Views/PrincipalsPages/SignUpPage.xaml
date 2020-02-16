@@ -9,7 +9,7 @@
              Opacity="20">
     <ContentPage.Content>
         <ScrollView>
-            <Grid Padding="10,0,10,0" RowSpacing="0" ColumnSpacing="0">
+            <Grid Padding="10" RowSpacing="0" ColumnSpacing="0">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
@@ -30,12 +30,13 @@
                 <Image Grid.ColumnSpan="3"
                    HorizontalOptions="CenterAndExpand"
                    Grid.Row="0"
-                   Source="Imageusuario.png"
+                   Source="aviondepapel.png"
                 />
                 <Label Grid.Row="1"
                    Grid.ColumnSpan="3"
                    HorizontalOptions="Center"
                    Text="Register"
+                       TextColor="Black"
                    FontSize="32"/>
 
                 <Entry Grid.Column="0"
@@ -101,7 +102,9 @@
                      Grid.ColumnSpan="3"
                      Text="Create account"
                      Command="{Binding FinishCommand}"
-                     Style="{StaticResource ButtonLoginPageKey}"/>
+                     Style="{StaticResource ButtonLoginPageKey}"
+                     BackgroundColor="DarkCyan"
+                     TextColor="White"/>
 
             </Grid>
         </ScrollView>

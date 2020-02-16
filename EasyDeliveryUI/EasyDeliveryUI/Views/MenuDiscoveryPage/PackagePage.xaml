@@ -15,20 +15,16 @@
                        Keyboard="Numeric"
                    SearchCommandParameter="{Binding Source={x:Reference searchBar}, Path=Text}"
                    Placeholder="Filter" />
-            <RefreshView IsRefreshing="{Binding IsFreshing, Mode=OneWay}" 
-                         Command="{Binding FreshingCommad}"
-                         RefreshColor="IndianRed">
-                <CollectionView ItemsSource="{Binding Packages}"  x:Name="ListPackages">
-                    <CollectionView.ItemTemplate>
-                        <DataTemplate>
-                            <templatesview:PackageView TitlePackage ="{Binding NamePackage}"
-                                                       NumberPackage="{Binding NumberTranking}"
-                                                       DescriptionPackage="{Binding Description}"
-                                                       StatePackage="{Binding StatePackage}"/>
-                        </DataTemplate>
-                    </CollectionView.ItemTemplate>
-                </CollectionView>
-            </RefreshView>
+            <ListView ItemsSource="{Binding Packages}"
+                      HasUnevenRows="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <templatesview:PackageView/>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

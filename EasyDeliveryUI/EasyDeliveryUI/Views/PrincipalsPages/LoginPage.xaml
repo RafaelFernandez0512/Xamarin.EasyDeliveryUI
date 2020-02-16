@@ -6,114 +6,132 @@
              xmlns:TemplatedView="clr-namespace:EasyDeliveryUI.Views.TemplatesView"
              mc:Ignorable="d"
              x:Class="EasyDeliveryUI.Views.PrincipalsPages.LoginPage"
-             BackgroundImageSource="MapImage.png"
-             Opacity="20"
+             BackgroundImageSource="ImageLogin.jpeg"
+             NavigationPage.HasNavigationBar="False"
              Title="Login"
              >
-    <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Sign Up"
-                     Priority="0"
-                     Order="Primary"
-
-                     Command="{Binding SignUpCommand}"/>
-    </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <ScrollView>
-            <Grid Padding="10,0,35,0">
+            <Grid Padding="10,10,10,0"
+                  RowSpacing="10">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="20"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="20"/>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="30"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="50"/>
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="180"/>
+                    <RowDefinition Height="210"/>
                     <RowDefinition Height="60"/>
                     <RowDefinition Height="60"/>
                     <RowDefinition Height="60"/>
                     <RowDefinition Height="60"/>
-                    <RowDefinition Height="40"/>
-                    <RowDefinition Height="40"/>
-                    <RowDefinition Height="60"/>
+                    <RowDefinition Height="1"/>
+                    <RowDefinition Height="45"/>
+                    <RowDefinition Height="45"/>
                 </Grid.RowDefinitions>
-                <Image Grid.ColumnSpan="5"
-                   Grid.Column="1"
-                   Grid.Row="0"
-                   HorizontalOptions="CenterAndExpand"
-                   Source="aviondepapel.png"
-                />
-                <Label Grid.Row="1"
-                   Grid.ColumnSpan="5"
-                   Grid.Column="1"
-                   Text="Welcome"
-                   HorizontalOptions="CenterAndExpand"
-                   FontSize="20"/>
+                <Label Grid.Row="0"
+                       Grid.ColumnSpan="6"
+                       Text="Sign Up"
+                       HorizontalOptions="EndAndExpand"
+                       FontSize="30"
+                       TextColor="BlanchedAlmond">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding SignUpCommand}"
+                                              NumberOfTapsRequired="1"/>
+                    </Label.GestureRecognizers>
+                </Label>
+
                 <!-- Username -->
-                <Image Grid.Row="2"
+                <Frame Grid.Row="1"
+                       Grid.ColumnSpan="6"
                        Grid.Column="0"
+                       CornerRadius="60"
+                       HasShadow="True"
+                       Opacity="0.5"/>
+                
+                <Image Grid.Row="1"
+                       Grid.Column="1"
                        BackgroundColor="Transparent"
                        Source="ImageUsers.png"/>
                 <Entry Text="{Binding Username}"
                    Placeholder="Username"
-                    Grid.Column="1"
+                    Grid.Column="2"
                        PlaceholderColor="Black"
-                   Grid.ColumnSpan="5"
-                   Grid.Row="2"/>
+                   Grid.ColumnSpan="3"
+                   Grid.Row="1"/>
+                    
                 <!-- Password -->
-                    <Image Grid.Row="3"
+                <Frame Grid.Row="2"
+                       Grid.ColumnSpan="6"
                        Grid.Column="0"
+                       CornerRadius="60"
+                       HasShadow="True"
+                       Opacity="0.5"/>
+                <Image Grid.Row="2"
+                       Grid.Column="1"
                            BackgroundColor="Transparent"
                        Source="baseline_vpn_key_black_18dp.png"/>
                 <Entry Text="{Binding Password}"
                    Placeholder="Password"
                    IsPassword="{Binding IsVisible }"
-                    Grid.Column="1"
+                    Grid.Column="2"
                        PlaceholderColor="Black"
-                   Grid.ColumnSpan="5"
-                   Grid.Row="3"/>
+                   Grid.ColumnSpan="3"
+                   Grid.Row="2"/>
                 <ImageButton Grid.Column="5"
-                             Grid.Row="3"
+                             Grid.Row="2"
                              BackgroundColor="Transparent"
                              Command="{Binding IsVisibleCommand}"
-                             Source="{Binding ImageVisibility}"/>
-                <Button Grid.Column="1"
-                    Grid.ColumnSpan="5"
-                        Grid.Row="4"
+                             Source="{Binding ImageVisibility}"
+                             Margin="0,0,20,0"/>
+                <Button Grid.Column="2"
+                    Grid.ColumnSpan="3"
+                        Grid.Row="3"
                     Text="Sign Out"
                     Command="{Binding SignOutCommand}"
                     Style="{StaticResource ButtonLoginPageKey}"/>
-                <Label  Grid.Row="5"
+                <Label  Grid.Row="4"
                     Grid.ColumnSpan="5"
                     Text="Forgot password?" 
                     FontSize="14"
                     FontAttributes="Italic"
-                    TextColor="DarkBlue"
+                    TextColor="BlanchedAlmond"
                     HorizontalOptions="EndAndExpand"
                     VerticalOptions="CenterAndExpand"/>
-                <Label  Grid.Row="6"
-                        Grid.Column="1"
-                    Grid.ColumnSpan="5"
-                    Text="Sign with:" 
+                <Label  Grid.Row="4"
+                        Grid.RowSpan="2"
+                        Grid.Column="3"
+                    Text="OR" 
+                        TextColor="Beige"
+                        FontSize="20"
+                        VerticalOptions="EndAndExpand"
                     HorizontalOptions="CenterAndExpand"/>
-                <ImageButton Grid.Column="1"
-                   Grid.Row="7"
-                  Style="{StaticResource ImageButtonLoginPageKey}"
-                   Source="Imagegoogle.png"/>
+                <Label  Grid.Row="5"
+                        TranslationY="-10"
+                        Grid.Column="0"
+                    Grid.ColumnSpan="3"
+                    BackgroundColor="Black"/>
+                <Label  Grid.Row="5"
+                        Grid.Column="4"
+                    Grid.ColumnSpan="2"
+                        TranslationY="-10"
+                    BackgroundColor="Black"/>
 
                 <ImageButton Grid.Column="2"
+                             Grid.ColumnSpan="3"
                          Style="{StaticResource ImageButtonLoginPageKey}"
-                   Grid.Row="7"
-                   Source="ImageInstagram.png"/>
-                <ImageButton Grid.Column="3"
-                         Style="{StaticResource ImageButtonLoginPageKey}"
-                   Grid.Row="7"
-                   Source="ImageTwitter.png"/>
-                <ImageButton Grid.Column="4"
-                         Style="{StaticResource ImageButtonLoginPageKey}"
-                   Grid.Row="7"
-                   Source="GitHubMark.png"/>
+                             Source="Imagegoogle.png"
+                   Grid.Row="6"/>
+
+                <ImageButton Grid.Column="2"
+                             Grid.Row="7"
+                             BackgroundColor="DodgerBlue"
+                             Grid.ColumnSpan="3"
+                            Style="{StaticResource ImageButtonLoginPageKey}"
+                            Source="facebookImage.png"/>
             </Grid>
         </ScrollView>
     </ContentPage.Content>

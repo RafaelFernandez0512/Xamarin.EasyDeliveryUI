@@ -34,7 +34,7 @@
                 <Frame Grid.RowSpan="7" 
                        Grid.Row="2"
                        BackgroundColor="WhiteSmoke"
-                       Opacity="0.9"
+                       Opacity="0.8"
                        CornerRadius="40"
                        Grid.ColumnSpan="7"
                        Padding="20"/>
@@ -43,7 +43,7 @@
                              CornerRadius="80"
                              Grid.Column="2"
                              Grid.ColumnSpan="3"
-                             Source="ImageProfile"
+                             Source="ImageProfilePerson"
                              Aspect="AspectFill"
                              BackgroundColor="Transparent"
                              Grid.RowSpan="2"/>

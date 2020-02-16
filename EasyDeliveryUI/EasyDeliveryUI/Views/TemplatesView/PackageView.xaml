@@ -15,7 +15,7 @@
         </ResourceDictionary>
     </ContentView.Resources>
     <ContentView.Content >
-      <Grid BindingContext="{x:Reference this}" Padding="10">
+      <Grid Padding="10">
             <Grid.RowDefinitions>
                 <RowDefinition Height="100"/>
                 <RowDefinition Height="100"/>
@@ -31,12 +31,12 @@
             <Label Grid.Row="0"
                    Grid.Column="1"
                    VerticalOptions="StartAndExpand"
-                    Text="{Binding NumberPackage,FallbackValue= 'Number traking'}"
+                    Text="{Binding NumberTranking,FallbackValue= 'Number traking'}"
                    />
             <Label Grid.Row="0"
                    Grid.Column="1"
                    VerticalOptions="CenterAndExpand"
-                    Text="{Binding TitlePackage,FallbackValue= 'Title'}"
+                    Text="{Binding NamePackage,FallbackValue= 'Title'}"
                    />
             <Label
                    Grid.Row="1"
@@ -44,7 +44,7 @@
                     FontSize="18"
                    VerticalOptions="CenterAndExpand"
                    LineBreakMode="CharacterWrap"
-                   Text="{Binding DescriptionPackage,FallbackValue= 'Description'}"/>
+                   Text="{Binding Description,FallbackValue= 'Description'}"/>
             <Label
                    Grid.Row="2"
                    Grid.ColumnSpan="2"

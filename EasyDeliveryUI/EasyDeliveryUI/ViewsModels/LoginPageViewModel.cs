@@ -78,7 +78,7 @@ namespace EasyDeliveryUI.ViewsModels
 
         public event PropertyChangedEventHandler PropertyChanged;
 
-        public async void ValidateAccount()
+        public async void ValidateAccount() 
         {
 
             var find = Accounts.Find(e => e.Username == Username ||e.EmailUser==Username && e.Password == Password);

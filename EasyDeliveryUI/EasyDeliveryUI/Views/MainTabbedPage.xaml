@@ -7,23 +7,25 @@
             mc:Ignorable="d"
              xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
               android:TabbedPage.ToolbarPlacement="Bottom"
+            android:TabbedPage.BarItemColor ="Black"
+            BarBackgroundColor="Beige"
              x:Class="EasyDeliveryUI.Views.MainTabbedPage"
              NavigationPage.HasNavigationBar="False">
   <!--Pages can be added as references or inline-->
 
-    <NavigationPage Title="Home" IconImageSource="casaImage.png" BarBackgroundColor="White" BarTextColor="LightGray">
+    <NavigationPage Title="Home" IconImageSource="casaImage.png" Style="{StaticResource NavegationKeyTapped }">
         <x:Arguments>
             <local:HomePage />
         </x:Arguments>
     </NavigationPage>
 
-    <NavigationPage Title="Discovery" IconImageSource="outline_search_black_18dp.png" BarBackgroundColor="White" BarTextColor="LightGray">
+    <NavigationPage Title="Discovery" IconImageSource="outline_search_black_18dp.png" Style="{StaticResource NavegationKeyTapped }">
         <x:Arguments>
             <local:DiscoveryPage Title="Discovery"/>
         </x:Arguments>
     </NavigationPage>
 
-    <NavigationPage Title="Package" IconImageSource="reloj.png" BarBackgroundColor="White" BarTextColor="LightGray" >
+    <NavigationPage Title="Package" IconImageSource="reloj.png" Style="{StaticResource NavegationKeyTapped }" >
         <x:Arguments>
             <local:ReceptionPage Title="Recepion" />
         </x:Arguments>
