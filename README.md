@@ -1,11 +1,14 @@
 # Xamarin.EasyDeliveryUI
 Xamarin.EasyDeliveryUI
+![GitHub Logo](/Screenshot/LoginPageImage.jpeg) 
+Format: ![Alt Text](url)
 
 ![GitHub Logo](/Screenshot/GitDiscoveryMenu.gif)
 Format: ![Alt Text](url)
 
-![GitHub Logo](/Screenshot/HomeImage3) 
+![GitHub Logo](/Screenshot/ScProfilePage.jpeg) 
 Format: ![Alt Text](url)
+
 ![GitHub Logo](/Screenshot/Home) 
 Format: ![Alt Text](url)
 ![GitHub Logo](/Screenshot/SignUpImage.jpeg)
