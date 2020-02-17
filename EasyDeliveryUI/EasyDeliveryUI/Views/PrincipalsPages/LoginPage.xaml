@@ -5,6 +5,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:TemplatedView="clr-namespace:EasyDeliveryUI.Views.TemplatesView"
              mc:Ignorable="d"
+             xmlns:resources ="clr-namespace:EasyDeliveryUI.Resx"
              x:Class="EasyDeliveryUI.Views.PrincipalsPages.LoginPage"
              BackgroundImageSource="ImageLogin.jpeg"
              NavigationPage.HasNavigationBar="False"
@@ -34,7 +35,8 @@
                 </Grid.RowDefinitions>
                 <Label Grid.Row="0"
                        Grid.ColumnSpan="6"
-                       Text="Sign Up"
+                       
+                       Text="{x:Static  resources:AppResource.LabelSignUp}"
                        HorizontalOptions="EndAndExpand"
                        FontSize="30"
                        TextColor="BlanchedAlmond">
@@ -57,7 +59,7 @@
                        BackgroundColor="Transparent"
                        Source="ImageUsers.png"/>
                 <Entry Text="{Binding Username}"
-                   Placeholder="Username"
+                   Placeholder="{x:Static resources:AppResource.EntryUsername}"
                     Grid.Column="2"
                        PlaceholderColor="Black"
                    Grid.ColumnSpan="3"
@@ -75,7 +77,7 @@
                            BackgroundColor="Transparent"
                        Source="baseline_vpn_key_black_18dp.png"/>
                 <Entry Text="{Binding Password}"
-                   Placeholder="Password"
+                   Placeholder="{x:Static resources:AppResource.EntryPassword}"
                    IsPassword="{Binding IsVisible }"
                     Grid.Column="2"
                        PlaceholderColor="Black"
@@ -90,12 +92,13 @@
                 <Button Grid.Column="2"
                     Grid.ColumnSpan="3"
                         Grid.Row="3"
-                    Text="Sign Out"
+                    Text="{Static resources:AppResource.ButtonSignOut}"
                     Command="{Binding SignOutCommand}"
                     Style="{StaticResource ButtonLoginPageKey}"/>
+                
                 <Label  Grid.Row="4"
                     Grid.ColumnSpan="5"
-                    Text="Forgot password?" 
+                    Text="{x:Static resources:AppResource.LabelForgotPass}" 
                     FontSize="14"
                     FontAttributes="Italic"
                     TextColor="BlanchedAlmond"
@@ -104,7 +107,7 @@
                 <Label  Grid.Row="4"
                         Grid.RowSpan="2"
                         Grid.Column="3"
-                    Text="OR" 
+                    Text="{x:Static resources:AppResource.LabelOr}" 
                         TextColor="Beige"
                         FontSize="20"
                         VerticalOptions="EndAndExpand"

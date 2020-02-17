@@ -7,8 +7,7 @@
 
              mc:Ignorable="d"
              x:Class="EasyDeliveryUI.Views.HomePage"
-             BackgroundImageSource="MapImage.png"
-             Title="Home">
+             BackgroundImageSource="MapImage.png">
     <ContentPage.Content>
         <Grid Padding="20">
                 <Grid.RowDefinitions>

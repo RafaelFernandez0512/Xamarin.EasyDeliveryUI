@@ -6,8 +6,8 @@
              xmlns:templatesview="clr-namespace:EasyDeliveryUI.Views.TemplatesView"
              mc:Ignorable="d"
              x:Class="EasyDeliveryUI.Views.PackagePage"
-             Title="Package"
-                >
+             Title="Package" 
+             >
     <ContentPage.Content>
         <StackLayout>
             <SearchBar x:Name="searchBar"
@@ -16,7 +16,10 @@
                    SearchCommandParameter="{Binding Source={x:Reference searchBar}, Path=Text}"
                    Placeholder="Filter" />
             <ListView ItemsSource="{Binding Packages}"
-                      HasUnevenRows="True">
+                      HasUnevenRows="True"
+                      IsRefreshing="{Binding IsFreshing}"
+                      IsPullToRefreshEnabled="True"
+                      RefreshCommand="{Binding FreshingCommad}">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>

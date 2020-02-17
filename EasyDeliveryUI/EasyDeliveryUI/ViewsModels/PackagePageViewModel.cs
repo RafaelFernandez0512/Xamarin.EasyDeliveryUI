@@ -18,7 +18,7 @@ namespace EasyDeliveryUI.ViewsModels
 
         public bool IsFreshing { get; set; }
         public ICommand FreshingCommad { get; set; }
-        public ObservableCollection<Package> Packages { get; private set; }
+        public List<Package> Packages { get; private set; }
         public ICommand FilterCommand => new Command<string>(FindPackages);
         public PackagePageViewModel()
         {
@@ -71,31 +71,20 @@ namespace EasyDeliveryUI.ViewsModels
             StatePackage = "transit",
             PountsPackage = 3
             }};
-            Packages = new ObservableCollection<Package>(packages);
+            Packages = new List<Package>(packages);
             FreshingCommad = new Command(() =>
             {
                 IsFreshing = true;
-                Packages = new ObservableCollection<Package>(packages);
+                Packages = new List<Package>(packages);
                 IsFreshing = false;
             });
         }
 
         public void FindPackages(string find)
         {
-            var itemfindAll = packages.Where(e => e.NumberTranking.ToString().Contains(find));
-            foreach (var item in packages)
-            {
-                if (!itemfindAll.Contains(item))
-                {
-                    Packages.Remove(item);
-                } else
-                {
-                    if (!Packages.Contains(item))
-                    {
-                        Packages.Add(item);
-                    }
-                }
-            }
+            var FindElements = packages.Where(e => e.NumberTranking.ToString().Contains(find)).ToList();
+            Packages.RemoveAll(e => e.NumberTranking.ToString().Contains(find));
+            Packages = FindElements;
         }
     }
 }

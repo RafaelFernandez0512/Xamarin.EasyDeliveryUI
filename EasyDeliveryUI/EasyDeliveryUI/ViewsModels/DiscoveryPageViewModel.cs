@@ -1,4 +1,5 @@
 ﻿using EasyDeliveryUI.Models;
+using EasyDeliveryUI.Resx;
 using EasyDeliveryUI.Views;
 using System;
 using System.Collections.Generic;
@@ -19,35 +20,35 @@ namespace EasyDeliveryUI.ViewsModels
         public DiscoveryPageViewModel()
         {
             ItemsMenu = new ObservableCollection<DiscoveryMenu>() { new DiscoveryMenu() { 
-            TitleDiscovery = "Pounts ",
+            TitleDiscovery = AppResource.PountsText,
             SubTitleDiscovery = " Punts Calculate",
             ImageDiscovery = "PountsImage.png",
              Type_Target = typeof(PackagePage)
             },
             new DiscoveryMenu() {
-            TitleDiscovery = "Package",
+            TitleDiscovery = AppResource.PackageText,
             SubTitleDiscovery = "Type package",
             ImageDiscovery = "SendImage.png",
              Type_Target = typeof(PackagePage)
             },
             new DiscoveryMenu() {
-            TitleDiscovery = "Boat",
+            TitleDiscovery = AppResource.BoatText,
             SubTitleDiscovery = "1 week",
             ImageDiscovery = "BoatImage.png",
             },
             new DiscoveryMenu() {
-            TitleDiscovery = "Track package",
+            TitleDiscovery = AppResource.TrackPackageText,
             SubTitleDiscovery = "Number Tracking",
             ImageDiscovery = "ImageLocation.png",
             Type_Target = typeof(PackagePage)
             },
             new DiscoveryMenu() {
-            TitleDiscovery = "Truck",
-            SubTitleDiscovery = "Delivery home",
+            TitleDiscovery = AppResource.TruckText,
+            SubTitleDiscovery = "Move your package",
             ImageDiscovery = "TruckImage.png",
             },
             new DiscoveryMenu() {
-            TitleDiscovery = "Go to store",
+            TitleDiscovery = AppResource.StoreText,
             SubTitleDiscovery = "Associated stores",
             ImageDiscovery = "StoreBag.png",
             }

@@ -5,6 +5,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="EasyDeliveryUI.Views.PrincipalsPages.SignUpPage" 
+             xmlns:resource ="clr-namespace:EasyDeliveryUI.Resx"
             BackgroundImageSource="MapImage.png"
              Opacity="20">
     <ContentPage.Content>
@@ -35,25 +36,25 @@
                 <Label Grid.Row="1"
                    Grid.ColumnSpan="3"
                    HorizontalOptions="Center"
-                   Text="Register"
+                   Text="{x:Static resource:AppResource.LabelRegister}"
                        TextColor="Black"
                    FontSize="32"/>
 
                 <Entry Grid.Column="0"
                    Grid.Row="2"
                    Text="{Binding User.Username}"
-                   Placeholder="Username"/>
+                   Placeholder="{x:Static resource:AppResource.EntryUsername}"/>
 
                 <Entry Grid.Column="1"
                    Grid.ColumnSpan="2"
                    Grid.Row="2"
                    Text="{Binding User.Lastname}"
-                   Placeholder="Lastname"/>
+                   Placeholder="{x:Static resource:AppResource.EntrylLastname}"/>
                 <Entry Grid.ColumnSpan="3"
                    Grid.Row="3"
                    IsPassword="{Binding IsVisible,FallbackValue= 'True'}"
                    Text="{Binding User.Password}"
-                   Placeholder="Password"/>
+                   Placeholder="{x:Static resource:AppResource.EntryPassword}"/>
 
                 <ImageButton Grid.Column="2"
                          Grid.Row="3"
@@ -65,42 +66,47 @@
                    Grid.Row="4"
                    Text="{Binding Password} "
                    IsPassword="True"
-                   Placeholder="Repeat Password"/>
+                   Placeholder="{x:Static resource:AppResource.EntryPassword}"/>
 
                 <Entry Grid.ColumnSpan="3"
                    Grid.Row="5"
-                   Text ="{Binding User.EmailUser}"
-                   Placeholder="Email"
+                   Text ="{Binding User.Email}"
+                   Placeholder="{x:Static resource:AppResource.EntryEmail}"
                    Keyboard="Email"/>
                 <DatePicker Grid.Row="6"
                         Grid.Column="0"
                         Date="{Binding User.DateOfBirth}"/>
+                
                 <Entry Grid.Column="1"
                    Grid.ColumnSpan="2"
                    Grid.Row="6"
-                   Placeholder="Phone"
+                   Placeholder="{x:Static resource:AppResource.EntryPhone}"
                    Text="{Binding User.PhoneUser}"
                    Keyboard="Numeric"/>
+                
                 <Entry Grid.ColumnSpan="3"
                    Grid.Row="7"
                    Keyboard="Numeric"
                    Text="{Binding User.Id_Card}"
-                   Placeholder="Id card"/>
+                   Placeholder="{x:Static resource:AppResource.EntryID_Card}"/>
+                
                 <Label Text="{Binding Validate}"
                    Grid.Row="8"
                    Grid.ColumnSpan="3"
                    TextColor="DarkRed"
                    VerticalOptions="StartAndExpand"
                    HorizontalOptions="StartAndExpand"/>
-                <Label Text="Terms and conditions"
+
+                <Label Text="{x:Static resource:AppResource.LabelTerms}"
                    Grid.Row="8"
                    Grid.ColumnSpan="3"
                    TextColor="DarkRed"
                    VerticalOptions="EndAndExpand"
                    HorizontalOptions="CenterAndExpand"/>
+                
                 <Button  Grid.Row="9"
                      Grid.ColumnSpan="3"
-                     Text="Create account"
+                     Text="{x:Static resource:AppResource.CreateButtons}"
                      Command="{Binding FinishCommand}"
                      Style="{StaticResource ButtonLoginPageKey}"
                      BackgroundColor="DarkCyan"

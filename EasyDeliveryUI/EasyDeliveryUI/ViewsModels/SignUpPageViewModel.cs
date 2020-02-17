@@ -1,4 +1,5 @@
 ﻿using EasyDeliveryUI.Models;
+using EasyDeliveryUI.Resx;
 using EasyDeliveryUI.Views;
 using System;
 using System.Collections.Generic;
@@ -44,26 +45,16 @@ namespace EasyDeliveryUI.ViewsModels
 
         public async void AddAccounts()
         {
-            var name = User.Username;
-            var lastname = User.Lastname;
-            var password = User.Password;
-            var email = User.EmailUser;
-            var phone = User.PhoneUser;
-            var idCard = User.Id_Card;
-            var dateOfBirth = User.DateOfBirth;
-
-            if (name.IsStringEmpty() && lastname.IsStringEmpty())
-                Validate = "Complete field nombre or lastname ";
-            else if (email.IsStringEmpty())
-                Validate = "Complete field email o incorrect email";
-            else if (password.IsStringEmpty() && password != Password)
-                Validate = "Complete field password or password is not equal ";
-            else if (!phone.ValidateNumber())
-                Validate = "Complete field number o incorrect number";
-            else if (!idCard.ValidateNumber())
-                Validate = "Complete field id car o incorrect id Car";
-            else if (dateOfBirth == null)
-                Validate = "Complete field Date of birth";
+            if (User.Username.IsStringEmpty() && User.Lastname.IsStringEmpty())
+                Validate = AppResource.ValidateUsername;
+            else if (User.EmailUser.IsStringEmpty())
+                Validate = AppResource.ValidateEmail;
+            else if (User.Password.IsStringEmpty() && User.Password != Password)
+                Validate = AppResource.ValidatePassword;
+            else if (!User.PhoneUser.ValidateNumber())
+                Validate = AppResource.ValidatePhoneNumber;
+            else if (!User.Id_Card.ValidateNumber())
+                Validate = AppResource.ValidateIscardNumber;
             else
             {
                 Accounts.Add(User);

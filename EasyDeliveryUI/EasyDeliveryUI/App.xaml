@@ -28,7 +28,7 @@
                 <Setter Property="BarTextColor" Value="White"/>
             </Style>
             <Style TargetType="NavigationPage" x:Key="NavegationKeyTapped">
-                <Setter Property="BarBackgroundColor" Value="Beige"/>
+                <Setter Property="BarBackgroundColor" Value="White"/>
                 <Setter Property="BarTextColor" Value="black"/>
             </Style>
         </ResourceDictionary>

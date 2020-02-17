@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyDeliveryUI.Android", "E
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyDeliveryUI.iOS", "EasyDeliveryUI\EasyDeliveryUI.iOS\EasyDeliveryUI.iOS.csproj", "{B5F1EDA7-C056-4BA5-8A5F-F093EDCE76E2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyDeliveryUI", "EasyDeliveryUI\EasyDeliveryUI\EasyDeliveryUI.csproj", "{9C9B5ECE-1830-42F8-A0F8-255DE8B05D05}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyDeliveryUI", "EasyDeliveryUI\EasyDeliveryUI\EasyDeliveryUI.csproj", "{9C9B5ECE-1830-42F8-A0F8-255DE8B05D05}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

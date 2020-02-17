@@ -5,7 +5,8 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="EasyDeliveryUI.Views.TemplatesView.PackageView"
-             x:Name="this">
+             x:Name="this"
+             >
     <ContentView.Resources>
         <ResourceDictionary>
             <Style TargetType="Label">

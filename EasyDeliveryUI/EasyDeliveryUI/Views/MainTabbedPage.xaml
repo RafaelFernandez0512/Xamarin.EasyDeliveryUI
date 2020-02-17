@@ -8,28 +8,29 @@
              xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
               android:TabbedPage.ToolbarPlacement="Bottom"
             android:TabbedPage.BarItemColor ="Black"
-            BarBackgroundColor="Beige"
+            BarBackgroundColor="White"
+            xmlns:resource ="clr-namespace:EasyDeliveryUI.Resx"
              x:Class="EasyDeliveryUI.Views.MainTabbedPage"
              NavigationPage.HasNavigationBar="False">
   <!--Pages can be added as references or inline-->
 
-    <NavigationPage Title="Home" IconImageSource="casaImage.png" Style="{StaticResource NavegationKeyTapped }">
+    <NavigationPage Title="{x:Static resource:AppResource.TitleHome}" IconImageSource="casaImage.png" Style="{StaticResource NavegationKeyTapped }">
         <x:Arguments>
-            <local:HomePage />
+            <local:HomePage Title="{x:Static resource:AppResource.TitleHome}"/>
         </x:Arguments>
     </NavigationPage>
 
-    <NavigationPage Title="Discovery" IconImageSource="outline_search_black_18dp.png" Style="{StaticResource NavegationKeyTapped }">
+    <NavigationPage Title="{x:Static resource:AppResource.TitleDiscovery}" IconImageSource="outline_search_black_18dp.png" Style="{StaticResource NavegationKeyTapped }">
         <x:Arguments>
-            <local:DiscoveryPage Title="Discovery"/>
+            <local:DiscoveryPage Title="{x:Static resource:AppResource.TitleDiscovery}"/>
         </x:Arguments>
     </NavigationPage>
 
-    <NavigationPage Title="Package" IconImageSource="reloj.png" Style="{StaticResource NavegationKeyTapped }" >
+    <NavigationPage Title="{x:Static resource:AppResource.TitleReception}" IconImageSource="reloj.png" Style="{StaticResource NavegationKeyTapped }" >
         <x:Arguments>
-            <local:ReceptionPage Title="Recepion" />
+            <local:ReceptionPage Title="{x:Static resource:AppResource.TitleReception}" />
         </x:Arguments>
     </NavigationPage>
 
-           <local:ProfilePage Title="Profile" IconImageSource="ImageUsers.png" />
+    <local:ProfilePage Title="{x:Static resource:AppResource.TitleProfile}" IconImageSource="ImageUsers.png" />
 </TabbedPage>

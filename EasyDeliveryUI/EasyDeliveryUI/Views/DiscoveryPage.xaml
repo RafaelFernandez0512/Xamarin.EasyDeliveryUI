@@ -10,7 +10,7 @@
              BackgroundImageSource="MapImage"
              Title="Discovery">
 
-    <StackLayout Margin="20,10,10,10">
+    <ContentPage.Content>
         <CollectionView ItemsSource="{Binding ItemsMenu}"
                         SelectionMode="Single"
                         SelectionChanged="CollectionView_SelectionChanged"
@@ -32,5 +32,5 @@
             </CollectionView.ItemTemplate>
 
         </CollectionView>
-    </StackLayout>
+    </ContentPage.Content>
 </ContentPage>

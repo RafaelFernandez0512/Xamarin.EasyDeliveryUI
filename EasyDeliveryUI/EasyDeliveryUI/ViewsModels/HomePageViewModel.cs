@@ -1,4 +1,5 @@
 ﻿using EasyDeliveryUI.Models;
+using EasyDeliveryUI.Resx;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -10,20 +11,20 @@ namespace EasyDeliveryUI.ViewsModels
     {
         public ObservableCollection<HomeMenu> ItemMenus { get; set; } = new ObservableCollection<HomeMenu>() {new HomeMenu()
         {
-            TitleCard = "Delivery",
-            Description = "Managed the delivery of the stuff you can't fit into your car.",
+            TitleCard = AppResource.DeliveryText,
+            Description = AppResource.DescriptionDelivery,
             ImageCard = "transporteaereo"
             },
         new HomeMenu()
         {
-            TitleCard = "Tracking package",
-            Description = "We can track your package with the number of traking",
+            TitleCard =  AppResource.TrackPackageText,
+            Description = AppResource.DescriptionTrackPackage,
             ImageCard = "paquetesImage"
             },
         new HomeMenu()
             {
-            TitleCard = "Package pounts",
-            Description = "For packages from 0 to 70 pounds, this service arrives within 24 to 48 hours from the USA.",
+            TitleCard =  AppResource.PountsText,
+            Description = AppResource.DescriptionPountsText,
             ImageCard = "CarImage.png"
             }
         };

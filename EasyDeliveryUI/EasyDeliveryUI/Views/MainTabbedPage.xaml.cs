@@ -1,4 +1,5 @@
 ﻿using EasyDeliveryUI.Models;
+using EasyDeliveryUI.Resx;
 using EasyDeliveryUI.ViewsModels;
 using System;
 using System.Collections.Generic;
@@ -24,7 +25,7 @@ namespace EasyDeliveryUI.Views
         protected override void OnCurrentPageChanged()
         {
             base.OnCurrentPageChanged();
-            if (CurrentPage.Title == "Profile")
+            if (CurrentPage.Title == AppResource.TitleProfile)
             {
                 CurrentPage.BindingContext = new ProfilePageViewModel(User);
             }

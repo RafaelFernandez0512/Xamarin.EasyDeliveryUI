@@ -5,7 +5,8 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="EasyDeliveryUI.Views.ProfilePage"
-             Title="Profile"
+             xmlns:resource ="clr-namespace:EasyDeliveryUI.Resx"
+             Title="{x:Static resource:AppResource.TitleProfile}"
              BackgroundImageSource="MapImage">
     <ContentPage.Content>
         <ScrollView>

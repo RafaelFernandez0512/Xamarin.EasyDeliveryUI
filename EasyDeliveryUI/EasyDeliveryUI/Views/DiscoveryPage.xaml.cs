@@ -31,6 +31,7 @@ namespace EasyDeliveryUI.Views
                 if (select.Type_Target !=null)
                 {
                     var page = (Page)Activator.CreateInstance(select.Type_Target);
+                    page.Title = select.TitleDiscovery;
                     Navigation.PushAsync(page);
                 }
 
